@@ -13,6 +13,7 @@
 		AA0347BC1F8DBBA300B8A773 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0347BB1F8DBBA300B8A773 /* main.m */; };
 		AA0347CB1F8DBD7B00B8A773 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */; };
 		AA9167151F8E1F8B00EAB8D9 /* KTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9167141F8E1F8B00EAB8D9 /* KTMessage.m */; };
+		AA91671C1F8E24E900EAB8D9 /* NSColor+KTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91671B1F8E24E900EAB8D9 /* NSColor+KTMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		AA9167131F8E1DCE00EAB8D9 /* KTMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessage.h; sourceTree = "<group>"; };
 		AA9167141F8E1F8B00EAB8D9 /* KTMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessage.m; sourceTree = "<group>"; };
 		AA9167161F8E214C00EAB8D9 /* KTMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessages.h; sourceTree = "<group>"; };
+		AA91671A1F8E24E900EAB8D9 /* NSColor+KTMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+KTMessage.h"; sourceTree = "<group>"; };
+		AA91671B1F8E24E900EAB8D9 /* NSColor+KTMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+KTMessage.m"; sourceTree = "<group>"; };
 		AA9B029A1F8DBEAF00D8C619 /* KTMessageMediaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageMediaData.h; sourceTree = "<group>"; };
 		AA9B029B1F8DC3D600D8C619 /* KTMessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +127,8 @@
 		AA0347C71F8DBD1F00B8A773 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				AA91671A1F8E24E900EAB8D9 /* NSColor+KTMessage.h */,
+				AA91671B1F8E24E900EAB8D9 /* NSColor+KTMessage.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0347BC1F8DBBA300B8A773 /* main.m in Sources */,
+				AA91671C1F8E24E900EAB8D9 /* NSColor+KTMessage.m in Sources */,
 				AA9167151F8E1F8B00EAB8D9 /* KTMessage.m in Sources */,
 				AA0347B41F8DBBA300B8A773 /* AppDelegate.m in Sources */,
 			);
