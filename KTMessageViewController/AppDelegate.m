@@ -13,6 +13,9 @@
 #import "KTMessageData.h"
 #import "KTMessageAvatarImageDataSource.h"
 #import "KTMessageBubbleImageDataSource.h"
+#import "KTMessagesCollectionViewDataSource.h"
+#import "KTMessagesCollectionViewDelegateFlowLayout.h"
+#import "KTMessage.h"
 
 @interface AppDelegate ()
 
