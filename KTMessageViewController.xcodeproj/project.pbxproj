@@ -11,6 +11,7 @@
 		AA0347B61F8DBBA300B8A773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0347B51F8DBBA300B8A773 /* Assets.xcassets */; };
 		AA0347B91F8DBBA300B8A773 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0347B71F8DBBA300B8A773 /* MainMenu.xib */; };
 		AA0347BC1F8DBBA300B8A773 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0347BB1F8DBBA300B8A773 /* main.m */; };
+		AA0347CB1F8DBD7B00B8A773 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,11 @@
 		AA0347BA1F8DBBA300B8A773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0347BB1F8DBBA300B8A773 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA0347BD1F8DBBA300B8A773 /* KTMessageViewController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KTMessageViewController.entitlements; sourceTree = "<group>"; };
+		AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA91670F1F8DE75600EAB8D9 /* KTMessageAvatarImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageAvatarImageDataSource.h; sourceTree = "<group>"; };
+		AA9167101F8DE96A00EAB8D9 /* KTMessageBubbleImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageBubbleImageDataSource.h; sourceTree = "<group>"; };
+		AA9B029A1F8DBEAF00D8C619 /* KTMessageMediaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageMediaData.h; sourceTree = "<group>"; };
+		AA9B029B1F8DC3D600D8C619 /* KTMessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,13 @@
 		AA0347B11F8DBBA300B8A773 /* KTMessageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AA0347C71F8DBD1F00B8A773 /* Categories */,
+				AA0347C41F8DBD1F00B8A773 /* Controllers */,
+				AA0347C51F8DBD1F00B8A773 /* Factories */,
+				AA0347C91F8DBD2000B8A773 /* KTMessageAssets */,
+				AA0347C81F8DBD1F00B8A773 /* Layout */,
+				AA0347C61F8DBD1F00B8A773 /* Model */,
+				AA0347C31F8DBD1F00B8A773 /* Views */,
 				AA0347B21F8DBBA300B8A773 /* AppDelegate.h */,
 				AA0347B31F8DBBA300B8A773 /* AppDelegate.m */,
 				AA0347B51F8DBBA300B8A773 /* Assets.xcassets */,
@@ -63,6 +76,60 @@
 				AA0347BD1F8DBBA300B8A773 /* KTMessageViewController.entitlements */,
 			);
 			path = KTMessageViewController;
+			sourceTree = "<group>";
+		};
+		AA0347C31F8DBD1F00B8A773 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA0347C41F8DBD1F00B8A773 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA0347C51F8DBD1F00B8A773 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		AA0347C61F8DBD1F00B8A773 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA9B029A1F8DBEAF00D8C619 /* KTMessageMediaData.h */,
+				AA9B029B1F8DC3D600D8C619 /* KTMessageData.h */,
+				AA91670F1F8DE75600EAB8D9 /* KTMessageAvatarImageDataSource.h */,
+				AA9167101F8DE96A00EAB8D9 /* KTMessageBubbleImageDataSource.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA0347C71F8DBD1F00B8A773 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AA0347C81F8DBD1F00B8A773 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		AA0347C91F8DBD2000B8A773 /* KTMessageAssets */ = {
+			isa = PBXGroup;
+			children = (
+				AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */,
+			);
+			path = KTMessageAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0347CB1F8DBD7B00B8A773 /* Images.xcassets in Resources */,
 				AA0347B61F8DBBA300B8A773 /* Assets.xcassets in Resources */,
 				AA0347B91F8DBBA300B8A773 /* MainMenu.xib in Resources */,
 			);
