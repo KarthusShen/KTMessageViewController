@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface NSColor (KTMessage)
+@interface NSColor (KTMessages)
 
 #pragma mark - Message bubble colors
 

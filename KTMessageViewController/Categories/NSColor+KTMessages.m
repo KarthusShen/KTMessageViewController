@@ -6,9 +6,9 @@
 //  Copyright © 2017年 karthus. All rights reserved.
 //
 
-#import "NSColor+KTMessage.h"
+#import "NSColor+KTMessages.h"
 
-@implementation NSColor (KTMessage)
+@implementation NSColor (KTMessages)
 
 #pragma mark - Message bubble colors
 + (NSColor *)kt_messageBubbleGreenColor
