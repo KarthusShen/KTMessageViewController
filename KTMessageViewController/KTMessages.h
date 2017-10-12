@@ -28,5 +28,7 @@
 //  Factories
 
 //  Categories
+#import "NSColor+KTMessages.h"
+#import "NSImage+KTMessages.h"
 
 #endif /* KTMessages_h */

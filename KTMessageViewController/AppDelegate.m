@@ -16,6 +16,7 @@
 #import "KTMessagesCollectionViewDataSource.h"
 #import "KTMessagesCollectionViewDelegateFlowLayout.h"
 #import "KTMessage.h"
+#import "KTMessages.h"
 
 @interface AppDelegate ()
 
