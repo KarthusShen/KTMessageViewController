@@ -17,6 +17,8 @@
 //  Model
 #import "KTMessage.h"
 
+#import "KTMessagesBubbleImage.h"
+
 //  Protocols
 #import "KTMessageData.h"
 #import "KTMessageMediaData.h"
