@@ -18,6 +18,7 @@
 #import "KTMessage.h"
 
 #import "KTMessagesBubbleImage.h"
+#import "KTMessagesAvatarImage.h"
 
 //  Protocols
 #import "KTMessageData.h"
