@@ -92,7 +92,7 @@
 //                               scale:image.scale
 //                         orientation:UIImageOrientationUpMirrored];
     
-    //TODO: use NSAffineTransform to flip the image on macOS, see more in http://blog.csdn.net/nitghost/article/details/3509703
+    //TODO: use NSAffineTransform to flip the image on macOS, see more in http://blog.csdn.net/nitghost/article/details/3509703 -shw
     return image;
 }
 
@@ -100,7 +100,7 @@
 {
 //    return [image resizableImageWithCapInsets:capInsets resizingMode:UIImageResizingModeStretch];
     
-    //TODO: see http://blog.csdn.net/freewaywalker/article/details/21322511
+    //TODO: see http://blog.csdn.net/freewaywalker/article/details/21322511 -shw
     image.capInsets = capInsets;
     image.resizingMode = NSImageResizingModeStretch;
     return image;

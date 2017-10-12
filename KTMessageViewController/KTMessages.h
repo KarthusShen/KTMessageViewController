@@ -31,6 +31,7 @@
 //  Factories
 #import "KTMessagesAvatarImageFactory.h"
 #import "KTMessagesBubbleImageFactory.h"
+#import "KTMessagesMediaViewBubbleImageMasker.h"
 
 //  Categories
 #import "NSColor+KTMessages.h"
