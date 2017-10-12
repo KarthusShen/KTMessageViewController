@@ -18,6 +18,7 @@
 		AA1614361F8F4627006F2E15 /* KTMessagesAvatarImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1614351F8F4627006F2E15 /* KTMessagesAvatarImageFactory.m */; };
 		AA1614391F8F5809006F2E15 /* KTMessagesBubbleImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1614381F8F5809006F2E15 /* KTMessagesBubbleImageFactory.m */; };
 		AA16143C1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16143B1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.m */; };
+		AA16143F1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16143E1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m */; };
 		AA9167151F8E1F8B00EAB8D9 /* KTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9167141F8E1F8B00EAB8D9 /* KTMessage.m */; };
 		AA91671C1F8E24E900EAB8D9 /* NSColor+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91671B1F8E24E900EAB8D9 /* NSColor+KTMessages.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,8 @@
 		AA1614381F8F5809006F2E15 /* KTMessagesBubbleImageFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesBubbleImageFactory.m; sourceTree = "<group>"; };
 		AA16143A1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesMediaViewBubbleImageMasker.h; sourceTree = "<group>"; };
 		AA16143B1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesMediaViewBubbleImageMasker.m; sourceTree = "<group>"; };
+		AA16143D1F8F884C006F2E15 /* KTMessagesTimestampFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesTimestampFormatter.h; sourceTree = "<group>"; };
+		AA16143E1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesTimestampFormatter.m; sourceTree = "<group>"; };
 		AA91670F1F8DE75600EAB8D9 /* KTMessageAvatarImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageAvatarImageDataSource.h; sourceTree = "<group>"; };
 		AA9167101F8DE96A00EAB8D9 /* KTMessageBubbleImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageBubbleImageDataSource.h; sourceTree = "<group>"; };
 		AA9167111F8DEE0800EAB8D9 /* KTMessagesCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionViewDataSource.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				AA1614381F8F5809006F2E15 /* KTMessagesBubbleImageFactory.m */,
 				AA16143A1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.h */,
 				AA16143B1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.m */,
+				AA16143D1F8F884C006F2E15 /* KTMessagesTimestampFormatter.h */,
+				AA16143E1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				AA0347BC1F8DBBA300B8A773 /* main.m in Sources */,
 				AA16143C1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.m in Sources */,
 				AA91671C1F8E24E900EAB8D9 /* NSColor+KTMessages.m in Sources */,
+				AA16143F1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m in Sources */,
 				AA9167151F8E1F8B00EAB8D9 /* KTMessage.m in Sources */,
 				AA16142D1F8EF9C9006F2E15 /* NSImage+KTMessages.m in Sources */,
 				AA0347B41F8DBBA300B8A773 /* AppDelegate.m in Sources */,

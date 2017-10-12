@@ -32,6 +32,7 @@
 #import "KTMessagesAvatarImageFactory.h"
 #import "KTMessagesBubbleImageFactory.h"
 #import "KTMessagesMediaViewBubbleImageMasker.h"
+#import "KTMessagesTimestampFormatter.h"
 
 //  Categories
 #import "NSColor+KTMessages.h"
