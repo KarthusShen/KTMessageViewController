@@ -29,6 +29,7 @@
 #import "KTMessagesCollectionViewDelegateFlowLayout.h"
 
 //  Factories
+#import "KTMessagesAvatarImageFactory.h"
 
 //  Categories
 #import "NSColor+KTMessages.h"
