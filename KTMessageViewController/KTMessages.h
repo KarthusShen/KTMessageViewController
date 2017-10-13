@@ -37,5 +37,7 @@
 //  Categories
 #import "NSColor+KTMessages.h"
 #import "NSImage+KTMessages.h"
+#import "NSView+KTMessages.h"
+#import "NSString+KTMessages.h"
 
 #endif /* KTMessages_h */
