@@ -53,6 +53,8 @@
 		AA2C52031F9050CA00C0E70B /* NSView+KTMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+KTMessages.m"; sourceTree = "<group>"; };
 		AA2C52051F90522900C0E70B /* NSString+KTMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KTMessages.h"; sourceTree = "<group>"; };
 		AA2C52061F90522900C0E70B /* NSString+KTMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTMessages.m"; sourceTree = "<group>"; };
+		AA2C520B1F90636500C0E70B /* KTMessagesMediaPlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesMediaPlaceholderView.h; sourceTree = "<group>"; };
+		AA2C520C1F90636500C0E70B /* KTMessagesMediaPlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesMediaPlaceholderView.m; sourceTree = "<group>"; };
 		AA91670F1F8DE75600EAB8D9 /* KTMessageAvatarImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageAvatarImageDataSource.h; sourceTree = "<group>"; };
 		AA9167101F8DE96A00EAB8D9 /* KTMessageBubbleImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageBubbleImageDataSource.h; sourceTree = "<group>"; };
 		AA9167111F8DEE0800EAB8D9 /* KTMessagesCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionViewDataSource.h; sourceTree = "<group>"; };
@@ -118,6 +120,8 @@
 		AA0347C31F8DBD1F00B8A773 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA2C520B1F90636500C0E70B /* KTMessagesMediaPlaceholderView.h */,
+				AA2C520C1F90636500C0E70B /* KTMessagesMediaPlaceholderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
