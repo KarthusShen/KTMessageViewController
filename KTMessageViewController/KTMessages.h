@@ -19,6 +19,8 @@
 #import "KTMessage.h"
 
 #import "KTMediaItem.h"
+#import "KTAudioMediaItem.h"
+#import "KTPhotoMediaItem.h"
 
 #import "KTMessagesBubbleImage.h"
 #import "KTMessagesAvatarImage.h"
