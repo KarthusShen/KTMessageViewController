@@ -1,5 +1,5 @@
 //
-//  KTMessagesBUbbleSizeCalculating.h
+//  KTMessagesBubbleSizeCalculating.h
 //  KTMessageViewController
 //
 //  Created by Karthus on 2017/10/14.
