@@ -11,14 +11,15 @@
 
 
 //  Views
-#import "KTMessagesMediaPlaceholderView.h"
 
 //  Layout
+#import "KTAudioMediaViewAttributes.h"
 
 //  Model
 #import "KTMessage.h"
 
 #import "KTMediaItem.h"
+
 #import "KTMessagesBubbleImage.h"
 #import "KTMessagesAvatarImage.h"
 
