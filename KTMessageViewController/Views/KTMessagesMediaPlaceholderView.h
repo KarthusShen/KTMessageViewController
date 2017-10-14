@@ -79,4 +79,5 @@
               backgroundColor:(NSColor *)backgroundColor
                     imageView:(NSImageView *)imageView;
 
+
 @end

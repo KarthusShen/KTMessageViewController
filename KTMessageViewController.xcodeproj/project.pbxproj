@@ -21,6 +21,8 @@
 		AA16143F1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16143E1F8F884C006F2E15 /* KTMessagesTimestampFormatter.m */; };
 		AA2C52041F9050CA00C0E70B /* NSView+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2C52031F9050CA00C0E70B /* NSView+KTMessages.m */; };
 		AA2C52071F90522900C0E70B /* NSString+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2C52061F90522900C0E70B /* NSString+KTMessages.m */; };
+		AA2C520F1F919CF500C0E70B /* KTMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2C520E1F919CF500C0E70B /* KTMediaItem.m */; };
+		AA2C521D1F91A66400C0E70B /* KTMessagesMediaPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2C520C1F90636500C0E70B /* KTMessagesMediaPlaceholderView.m */; };
 		AA9167151F8E1F8B00EAB8D9 /* KTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9167141F8E1F8B00EAB8D9 /* KTMessage.m */; };
 		AA91671C1F8E24E900EAB8D9 /* NSColor+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA91671B1F8E24E900EAB8D9 /* NSColor+KTMessages.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,14 @@
 		AA2C52061F90522900C0E70B /* NSString+KTMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KTMessages.m"; sourceTree = "<group>"; };
 		AA2C520B1F90636500C0E70B /* KTMessagesMediaPlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesMediaPlaceholderView.h; sourceTree = "<group>"; };
 		AA2C520C1F90636500C0E70B /* KTMessagesMediaPlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesMediaPlaceholderView.m; sourceTree = "<group>"; };
+		AA2C520D1F919CF500C0E70B /* KTMediaItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMediaItem.h; sourceTree = "<group>"; };
+		AA2C520E1F919CF500C0E70B /* KTMediaItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMediaItem.m; sourceTree = "<group>"; };
+		AA2C52111F91A10F00C0E70B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA2C52131F91A12500C0E70B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA2C52151F91A14200C0E70B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA2C52171F91A15600C0E70B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA2C52191F91A16500C0E70B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AA2C521B1F91A17900C0E70B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AA91670F1F8DE75600EAB8D9 /* KTMessageAvatarImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageAvatarImageDataSource.h; sourceTree = "<group>"; };
 		AA9167101F8DE96A00EAB8D9 /* KTMessageBubbleImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageBubbleImageDataSource.h; sourceTree = "<group>"; };
 		AA9167111F8DEE0800EAB8D9 /* KTMessagesCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionViewDataSource.h; sourceTree = "<group>"; };
@@ -84,6 +94,7 @@
 			children = (
 				AA0347B11F8DBBA300B8A773 /* KTMessageViewController */,
 				AA0347B01F8DBBA300B8A773 /* Products */,
+				AA2C52101F91A10F00C0E70B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +174,8 @@
 				AA16142F1F8F0E81006F2E15 /* KTMessagesBubbleImage.m */,
 				AA1614311F8F141D006F2E15 /* KTMessagesAvatarImage.h */,
 				AA1614321F8F141D006F2E15 /* KTMessagesAvatarImage.m */,
+				AA2C520D1F919CF500C0E70B /* KTMediaItem.h */,
+				AA2C520E1F919CF500C0E70B /* KTMediaItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +208,19 @@
 				AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */,
 			);
 			path = KTMessageAssets;
+			sourceTree = "<group>";
+		};
+		AA2C52101F91A10F00C0E70B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA2C521B1F91A17900C0E70B /* CoreLocation.framework */,
+				AA2C52191F91A16500C0E70B /* MapKit.framework */,
+				AA2C52171F91A15600C0E70B /* QuartzCore.framework */,
+				AA2C52151F91A14200C0E70B /* Foundation.framework */,
+				AA2C52131F91A12500C0E70B /* CoreGraphics.framework */,
+				AA2C52111F91A10F00C0E70B /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2C521D1F91A66400C0E70B /* KTMessagesMediaPlaceholderView.m in Sources */,
 				AA1614391F8F5809006F2E15 /* KTMessagesBubbleImageFactory.m in Sources */,
 				AA1614331F8F141D006F2E15 /* KTMessagesAvatarImage.m in Sources */,
+				AA2C520F1F919CF500C0E70B /* KTMediaItem.m in Sources */,
 				AA1614301F8F0E81006F2E15 /* KTMessagesBubbleImage.m in Sources */,
 				AA1614361F8F4627006F2E15 /* KTMessagesAvatarImageFactory.m in Sources */,
 				AA2C52041F9050CA00C0E70B /* NSView+KTMessages.m in Sources */,
@@ -410,8 +438,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = KTMessageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karthus.KTMessageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64 armv7 arm64 armv7s";
 			};
 			name = Debug;
 		};
@@ -424,8 +454,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = KTMessageViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karthus.KTMessageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64 armv7 arm64 armv7s";
 			};
 			name = Release;
 		};
