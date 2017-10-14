@@ -13,6 +13,7 @@
 //  Views
 
 //  Layout
+#import "KTMessagesBubbleSizeCalculating.h"
 #import "KTAudioMediaViewAttributes.h"
 
 //  Model
@@ -21,6 +22,7 @@
 #import "KTMediaItem.h"
 #import "KTAudioMediaItem.h"
 #import "KTPhotoMediaItem.h"
+#import "KTVideoMediaItem.h"
 
 #import "KTMessagesBubbleImage.h"
 #import "KTMessagesAvatarImage.h"

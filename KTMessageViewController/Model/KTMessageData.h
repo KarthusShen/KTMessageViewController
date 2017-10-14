@@ -10,6 +10,7 @@
 #define KTMessageData_h
 
 #import <Foundation/Foundation.h>
+
 #import "KTMessageMediaData.h"
 
 @protocol KTMessageData <NSObject>

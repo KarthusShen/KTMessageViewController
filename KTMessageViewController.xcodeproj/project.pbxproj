@@ -77,6 +77,7 @@
 		AA2C52251F91B3A500C0E70B /* KTPhotoMediaItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTPhotoMediaItem.m; sourceTree = "<group>"; };
 		AA2C52271F91B60500C0E70B /* KTVideoMediaItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTVideoMediaItem.h; sourceTree = "<group>"; };
 		AA2C52281F91B60500C0E70B /* KTVideoMediaItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTVideoMediaItem.m; sourceTree = "<group>"; };
+		AA2C522A1F91B86C00C0E70B /* KTMessagesBUbbleSizeCalculating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesBUbbleSizeCalculating.h; sourceTree = "<group>"; };
 		AA91670F1F8DE75600EAB8D9 /* KTMessageAvatarImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageAvatarImageDataSource.h; sourceTree = "<group>"; };
 		AA9167101F8DE96A00EAB8D9 /* KTMessageBubbleImageDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessageBubbleImageDataSource.h; sourceTree = "<group>"; };
 		AA9167111F8DEE0800EAB8D9 /* KTMessagesCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionViewDataSource.h; sourceTree = "<group>"; };
@@ -218,6 +219,7 @@
 			children = (
 				AA2C52211F91ABC200C0E70B /* KTAudioMediaViewAttributes.h */,
 				AA2C52221F91ABC200C0E70B /* KTAudioMediaViewAttributes.m */,
+				AA2C522A1F91B86C00C0E70B /* KTMessagesBUbbleSizeCalculating.h */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
