@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B42A1561F92F8BF007B4BA5 /* KTMessagesLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42A1551F92F8BF007B4BA5 /* KTMessagesLabel.m */; };
 		AA0347B41F8DBBA300B8A773 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0347B31F8DBBA300B8A773 /* AppDelegate.m */; };
 		AA0347B61F8DBBA300B8A773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0347B51F8DBBA300B8A773 /* Assets.xcassets */; };
 		AA0347B91F8DBBA300B8A773 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0347B71F8DBBA300B8A773 /* MainMenu.xib */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B42A1541F92F8BF007B4BA5 /* KTMessagesLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTMessagesLabel.h; sourceTree = "<group>"; };
+		1B42A1551F92F8BF007B4BA5 /* KTMessagesLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTMessagesLabel.m; sourceTree = "<group>"; };
 		AA0347AF1F8DBBA300B8A773 /* KTMessageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTMessageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0347B21F8DBBA300B8A773 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA0347B31F8DBBA300B8A773 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 			children = (
 				AA2C520B1F90636500C0E70B /* KTMessagesMediaPlaceholderView.h */,
 				AA2C520C1F90636500C0E70B /* KTMessagesMediaPlaceholderView.m */,
+				1B42A1541F92F8BF007B4BA5 /* KTMessagesLabel.h */,
+				1B42A1551F92F8BF007B4BA5 /* KTMessagesLabel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				AA1614361F8F4627006F2E15 /* KTMessagesAvatarImageFactory.m in Sources */,
 				AA2C52041F9050CA00C0E70B /* NSView+KTMessages.m in Sources */,
 				AA2C52071F90522900C0E70B /* NSString+KTMessages.m in Sources */,
+				1B42A1561F92F8BF007B4BA5 /* KTMessagesLabel.m in Sources */,
 				AA0347BC1F8DBBA300B8A773 /* main.m in Sources */,
 				AA16143C1F8F6EB2006F2E15 /* KTMessagesMediaViewBubbleImageMasker.m in Sources */,
 				AA91671C1F8E24E900EAB8D9 /* NSColor+KTMessages.m in Sources */,
