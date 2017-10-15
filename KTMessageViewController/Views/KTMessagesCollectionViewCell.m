@@ -8,6 +8,7 @@
 
 #import "KTMessagesCollectionViewCell.h"
 
+//TODO: implements this calss
 @interface KTMessagesCollectionViewCell ()
 
 @end
