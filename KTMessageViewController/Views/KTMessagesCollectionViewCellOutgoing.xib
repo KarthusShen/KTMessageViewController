@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,10 +17,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erM-AU-jKr" userLabel="Cell top lable">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erM-AU-jKr" userLabel="Cell top lable" customClass="KTMessagesLabel">
                     <rect key="frame" x="0.0" y="174" width="320" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="leo-uJ-x84"/>
+                        <constraint firstAttribute="height" constant="20" id="leo-uJ-x84" userLabel="Cell Top Height Constraint"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title=" cell top label" drawsBackground="YES" id="ohL-KK-ySa" userLabel="Cell top label">
                         <font key="font" metaFont="system"/>
@@ -28,10 +28,10 @@
                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geI-XE-nUm">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="geI-XE-nUm" customClass="KTMessagesLabel">
                     <rect key="frame" x="0.0" y="154" width="320" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="yHq-ih-J3j"/>
+                        <constraint firstAttribute="height" constant="20" id="yHq-ih-J3j" userLabel="Message Bubble Top Lable Height Constraint"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="bubble top label" drawsBackground="YES" id="WdW-Jg-q22">
                         <font key="font" metaFont="system"/>
@@ -49,14 +49,14 @@
                         <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pol-W6-akw" userLabel="Text View">
                             <rect key="frame" x="2" y="0.0" width="240" height="135"/>
                             <clipView key="contentView" id="2XJ-VA-tN6">
-                                <rect key="frame" x="1" y="1" width="223" height="133"/>
+                                <rect key="frame" x="1" y="1" width="238" height="133"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="fnV-4l-OXZ" customClass="KTMessagesCellTextView">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                    <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="fnV-4l-OXZ" customClass="KTMessagesCellTextView">
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="133"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <size key="minSize" width="223" height="133"/>
+                                        <size key="minSize" width="238" height="133"/>
                                         <size key="maxSize" width="463" height="10000000"/>
                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     </textView>
@@ -68,21 +68,21 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                             <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="iPc-mK-ke7">
-                                <rect key="frame" x="224" y="1" width="15" height="133"/>
+                                <rect key="frame" x="223" y="1" width="16" height="133"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                         </scrollView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="Pol-W6-akw" firstAttribute="leading" secondItem="zAY-cz-k5e" secondAttribute="leading" constant="2" id="1dA-Re-dmb"/>
-                        <constraint firstAttribute="bottom" secondItem="Pol-W6-akw" secondAttribute="bottom" id="LXn-PI-Y2h"/>
+                        <constraint firstItem="Pol-W6-akw" firstAttribute="leading" secondItem="zAY-cz-k5e" secondAttribute="leading" constant="2" id="1dA-Re-dmb" userLabel="Text View Margin Horizontal Space Constraint"/>
+                        <constraint firstAttribute="bottom" secondItem="Pol-W6-akw" secondAttribute="bottom" id="LXn-PI-Y2h" userLabel="Text View Bottom Vertical Space Constraint"/>
                         <constraint firstAttribute="trailing" secondItem="Ccf-4a-VdV" secondAttribute="trailing" id="T6N-Wp-Rms"/>
-                        <constraint firstAttribute="width" constant="244" id="bJk-Ux-iU9"/>
+                        <constraint firstAttribute="width" constant="244" id="bJk-Ux-iU9" userLabel="Message Bubble Container Width Constraint"/>
                         <constraint firstItem="Ccf-4a-VdV" firstAttribute="top" secondItem="zAY-cz-k5e" secondAttribute="top" id="i5Q-xj-I4U"/>
-                        <constraint firstAttribute="trailing" secondItem="Pol-W6-akw" secondAttribute="trailing" constant="2" id="obz-zx-LZX"/>
+                        <constraint firstAttribute="trailing" secondItem="Pol-W6-akw" secondAttribute="trailing" constant="2" id="obz-zx-LZX" userLabel="Text View Avatar Horizontal Space Constraint"/>
                         <constraint firstItem="Ccf-4a-VdV" firstAttribute="leading" secondItem="zAY-cz-k5e" secondAttribute="leading" id="r1s-ul-sUQ"/>
                         <constraint firstAttribute="bottom" secondItem="Ccf-4a-VdV" secondAttribute="bottom" id="xcm-lH-yAC"/>
-                        <constraint firstItem="Pol-W6-akw" firstAttribute="top" secondItem="zAY-cz-k5e" secondAttribute="top" constant="-1" id="xu0-dC-Y6B"/>
+                        <constraint firstItem="Pol-W6-akw" firstAttribute="top" secondItem="zAY-cz-k5e" secondAttribute="top" constant="-1" id="xu0-dC-Y6B" userLabel="Text View Top Vertical Space Constraint"/>
                     </constraints>
                 </customView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="OyA-7k-SZd" userLabel="Avatar container">
@@ -90,22 +90,22 @@
                     <subviews>
                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ceR-bg-hGM" userLabel="Avatar Image View">
                             <rect key="frame" x="-7" y="-7" width="48" height="48"/>
-                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dR2-Us-rpb" userLabel="Avatar Image"/>
+                            <imageCell key="cell" controlSize="mini" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dR2-Us-rpb" userLabel="Avatar Image"/>
                         </imageView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="34" id="1r3-mt-SF4"/>
-                        <constraint firstAttribute="width" constant="34" id="CN9-Cf-0j6"/>
+                        <constraint firstAttribute="height" constant="34" id="1r3-mt-SF4" userLabel="Avatar Container View Width Constraint"/>
+                        <constraint firstAttribute="width" constant="34" id="CN9-Cf-0j6" userLabel="Avatar Container View Height Constraint"/>
                         <constraint firstItem="ceR-bg-hGM" firstAttribute="top" secondItem="OyA-7k-SZd" secondAttribute="top" constant="-7" id="eRG-NH-cjt"/>
                         <constraint firstAttribute="bottom" secondItem="ceR-bg-hGM" secondAttribute="bottom" constant="-7" id="h9I-w2-8Eu"/>
                         <constraint firstItem="ceR-bg-hGM" firstAttribute="leading" secondItem="OyA-7k-SZd" secondAttribute="leading" constant="-7" id="kKU-4y-bAZ"/>
                         <constraint firstAttribute="trailing" secondItem="ceR-bg-hGM" secondAttribute="trailing" constant="-7" id="zV2-Hb-9tf"/>
                     </constraints>
                 </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIG-5P-tEO" userLabel="Cell bottom label">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hIG-5P-tEO" userLabel="Cell bottom label" customClass="KTMessagesLabel">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="BzU-Ug-6OW"/>
+                        <constraint firstAttribute="height" constant="20" id="BzU-Ug-6OW" userLabel="Cell Bottom Label Height Constraint"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="cell Bottom label" drawsBackground="YES" id="Ox6-fM-k0B" userLabel="Cell bottom label">
                         <font key="font" metaFont="system"/>
@@ -116,8 +116,8 @@
                 <button translatesAutoresizingMaskIntoConstraints="NO" id="6ct-E7-x0u" userLabel="Accessory button">
                     <rect key="frame" x="10" y="75" width="24" height="24"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="24" id="P2k-Us-VCN"/>
-                        <constraint firstAttribute="height" constant="24" id="aQ1-x7-TmM"/>
+                        <constraint firstAttribute="width" constant="24" id="P2k-Us-VCN" userLabel="Accessory Button Width Constraint"/>
+                        <constraint firstAttribute="height" constant="24" id="aQ1-x7-TmM" userLabel="Accessory Button Height Constraint"/>
                     </constraints>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="MVw-O2-52S" userLabel="Accessory button">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
