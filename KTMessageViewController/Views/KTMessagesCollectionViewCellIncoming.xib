@@ -131,18 +131,10 @@
                 <constraint firstItem="6ru-WO-1MZ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="zpk-43-3Gd"/>
             </constraints>
         </customView>
-        <collectionViewItem id="Ki9-or-eDD" userLabel="Messages Collection View Cell Incoming">
+        <collectionViewItem id="Ki9-or-eDD" userLabel="Messages Collection View Cell Incoming" customClass="KTMessagesCollectionViewCellIncoming">
             <connections>
                 <outlet property="view" destination="Hz6-mo-xeY" id="ZKa-Tn-7QH"/>
             </connections>
         </collectionViewItem>
-        <customView id="lOS-Qu-LCc">
-            <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-        </customView>
-        <customView id="S5D-gH-2cH">
-            <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-        </customView>
     </objects>
 </document>
