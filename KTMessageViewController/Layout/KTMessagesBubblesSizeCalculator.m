@@ -10,8 +10,8 @@
 
 #import "KTMessageBubbleImageDataSource.h"
 #import "KTMessageData.h"
-//TODO: KTMessagesCollectionViewFlowLayout.h
-//TODO: KTMessagesCollectionView.h
+#import "KTMessagesCollectionViewFlowLayout.h"
+//#import "KTMessagesCollectionView.h"
 
 #import "NSImage+KTMessages.h"
 

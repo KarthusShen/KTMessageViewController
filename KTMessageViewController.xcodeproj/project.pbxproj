@@ -21,6 +21,7 @@
 		AA0347B91F8DBBA300B8A773 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0347B71F8DBBA300B8A773 /* MainMenu.xib */; };
 		AA0347BC1F8DBBA300B8A773 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0347BB1F8DBBA300B8A773 /* main.m */; };
 		AA0347CB1F8DBD7B00B8A773 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */; };
+		AA06A3E61F96F1DF00607E23 /* KTMessagesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */; };
 		AA16142D1F8EF9C9006F2E15 /* NSImage+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16142C1F8EF9C9006F2E15 /* NSImage+KTMessages.m */; };
 		AA1614301F8F0E81006F2E15 /* KTMessagesBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16142F1F8F0E81006F2E15 /* KTMessagesBubbleImage.m */; };
 		AA1614331F8F141D006F2E15 /* KTMessagesAvatarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1614321F8F141D006F2E15 /* KTMessagesAvatarImage.m */; };
@@ -67,6 +68,8 @@
 		AA0347BB1F8DBBA300B8A773 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA0347BD1F8DBBA300B8A773 /* KTMessageViewController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KTMessageViewController.entitlements; sourceTree = "<group>"; };
 		AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA06A3E41F96F1DF00607E23 /* KTMessagesCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionView.h; sourceTree = "<group>"; };
+		AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesCollectionView.m; sourceTree = "<group>"; };
 		AA16142B1F8EF9C9006F2E15 /* NSImage+KTMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+KTMessages.h"; sourceTree = "<group>"; };
 		AA16142C1F8EF9C9006F2E15 /* NSImage+KTMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+KTMessages.m"; sourceTree = "<group>"; };
 		AA16142E1F8F0E81006F2E15 /* KTMessagesBubbleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesBubbleImage.h; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				1B42A1681F930DA8007B4BA5 /* KTMessagesCollectionViewCellOutgoing.h */,
 				1B42A1691F930DA8007B4BA5 /* KTMessagesCollectionViewCellOutgoing.m */,
 				1B42A16A1F930DA8007B4BA5 /* KTMessagesCollectionViewCellOutgoing.xib */,
+				AA06A3E41F96F1DF00607E23 /* KTMessagesCollectionView.h */,
+				AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				1B42A1591F92FD64007B4BA5 /* KTMessagesCellTextView.m in Sources */,
 				1B42A1661F930C8D007B4BA5 /* KTMessagesCollectionViewCellIncoming.m in Sources */,
 				AA2C52041F9050CA00C0E70B /* NSView+KTMessages.m in Sources */,
+				AA06A3E61F96F1DF00607E23 /* KTMessagesCollectionView.m in Sources */,
 				1B42A16B1F930DA8007B4BA5 /* KTMessagesCollectionViewCellOutgoing.m in Sources */,
 				AA2C52071F90522900C0E70B /* NSString+KTMessages.m in Sources */,
 				1B42A15F1F93068E007B4BA5 /* KTMessagesCollectionViewFlowLayout.m in Sources */,

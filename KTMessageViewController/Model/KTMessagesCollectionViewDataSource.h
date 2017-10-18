@@ -22,7 +22,7 @@
  *  required by a `KTMessagesCollectionView`. The data source object represents your app’s messaging data model
  *  and vends information to the collection view as needed.
  */
-@protocol KTMessageCollectionViewDataSource <NSCollectionViewDataSource>
+@protocol KTMessagesCollectionViewDataSource <NSCollectionViewDataSource>
 
 @required
 /**
