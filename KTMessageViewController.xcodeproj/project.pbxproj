@@ -22,6 +22,7 @@
 		AA0347BC1F8DBBA300B8A773 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0347BB1F8DBBA300B8A773 /* main.m */; };
 		AA0347CB1F8DBD7B00B8A773 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */; };
 		AA06A3E61F96F1DF00607E23 /* KTMessagesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */; };
+		AA06A3E91F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06A3E81F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m */; };
 		AA16142D1F8EF9C9006F2E15 /* NSImage+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16142C1F8EF9C9006F2E15 /* NSImage+KTMessages.m */; };
 		AA1614301F8F0E81006F2E15 /* KTMessagesBubbleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16142F1F8F0E81006F2E15 /* KTMessagesBubbleImage.m */; };
 		AA1614331F8F141D006F2E15 /* KTMessagesAvatarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1614321F8F141D006F2E15 /* KTMessagesAvatarImage.m */; };
@@ -70,6 +71,8 @@
 		AA0347CA1F8DBD7B00B8A773 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA06A3E41F96F1DF00607E23 /* KTMessagesCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionView.h; sourceTree = "<group>"; };
 		AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesCollectionView.m; sourceTree = "<group>"; };
+		AA06A3E71F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionViewFlowLayoutInvalidationContext.h; sourceTree = "<group>"; };
+		AA06A3E81F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesCollectionViewFlowLayoutInvalidationContext.m; sourceTree = "<group>"; };
 		AA16142B1F8EF9C9006F2E15 /* NSImage+KTMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+KTMessages.h"; sourceTree = "<group>"; };
 		AA16142C1F8EF9C9006F2E15 /* NSImage+KTMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+KTMessages.m"; sourceTree = "<group>"; };
 		AA16142E1F8F0E81006F2E15 /* KTMessagesBubbleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesBubbleImage.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				1B42A15B1F92FF87007B4BA5 /* KTMessagesCollectionViewLayoutAttributes.m */,
 				1B42A15D1F93068E007B4BA5 /* KTMessagesCollectionViewFlowLayout.h */,
 				1B42A15E1F93068E007B4BA5 /* KTMessagesCollectionViewFlowLayout.m */,
+				AA06A3E71F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.h */,
+				AA06A3E81F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				AA16142D1F8EF9C9006F2E15 /* NSImage+KTMessages.m in Sources */,
 				1B42A15C1F92FF87007B4BA5 /* KTMessagesCollectionViewLayoutAttributes.m in Sources */,
 				AA0347B41F8DBBA300B8A773 /* AppDelegate.m in Sources */,
+				AA06A3E91F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				AA2C52261F91B3A500C0E70B /* KTPhotoMediaItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
