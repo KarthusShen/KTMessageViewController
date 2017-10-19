@@ -38,26 +38,6 @@
 //    self.alwaysBounceVertical = YES;
 //    self.bounces = YES;
     
-//    [self registerNib:[KTMessagesCollectionViewCellIncoming nib]
-//forCellWithReuseIdentifier:[KTMessagesCollectionViewCellIncoming cellReuseIdentifier]];
-//
-//    [self registerNib:[KTMessagesCollectionViewCellOutgoing nib]
-//forCellWithReuseIdentifier:[KTMessagesCollectionViewCellOutgoing cellReuseIdentifier]];
-//
-//    [self registerNib:[KTMessagesCollectionViewCellIncoming nib]
-//forCellWithReuseIdentifier:[KTMessagesCollectionViewCellIncoming mediaCellReuseIdentifier]];
-//
-//    [self registerNib:[KTMessagesCollectionViewCellOutgoing nib]
-//forCellWithReuseIdentifier:[KTMessagesCollectionViewCellOutgoing mediaCellReuseIdentifier]];
-//
-//    [self registerNib:[KTMessagesTypingIndicatorFooterView nib]
-//forSupplementaryViewOfKind:UICollectionElementKindSectionFooter
-//  withReuseIdentifier:[KTMessagesTypingIndicatorFooterView footerReuseIdentifier]];
-//
-//    [self registerNib:[KTMessagesLoadEarlierHeaderView nib]
-//forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-//  withReuseIdentifier:[KTMessagesLoadEarlierHeaderView headerReuseIdentifier]];
-    
     [self registerNib:[KTMessagesCollectionViewCellIncoming nib]
 forItemWithIdentifier:[KTMessagesCollectionViewCellIncoming cellReuseIdentifier]];
     

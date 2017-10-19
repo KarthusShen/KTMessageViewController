@@ -11,14 +11,17 @@
 
 
 //  Views
+#import "KTMessagesCollectionView.h"
 #import "KTMessagesCollectionViewCellIncoming.h"
 #import "KTMessagesCollectionViewCellOutgoing.h"
+
 
 //  Layout
 #import "KTMessagesBubbleSizeCalculating.h"
 #import "KTMessagesBubblesSizeCalculator.h"
 #import "KTMessagesCollectionViewFlowLayout.h"
 #import "KTMessagesCollectionViewLayoutAttributes.h"
+#import "KTMessagesCollectionViewFlowLayoutInvalidationContext.h"
 #import "KTAudioMediaViewAttributes.h"
 
 //  Model
@@ -31,6 +34,8 @@
 
 #import "KTMessagesBubbleImage.h"
 #import "KTMessagesAvatarImage.h"
+
+#import "KTAudioMediaViewAttributes.h"
 
 //  Protocols
 #import "KTMessageData.h"
