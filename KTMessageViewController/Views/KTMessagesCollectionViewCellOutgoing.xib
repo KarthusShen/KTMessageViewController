@@ -8,6 +8,24 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KTMessagesCollectionViewCellOutgoing">
             <connections>
+                <outlet property="avatarContainerView" destination="OyA-7k-SZd" id="Gdw-y2-zKo"/>
+                <outlet property="avatarContainerViewHeightConstraint" destination="CN9-Cf-0j6" id="oG6-6h-Pe4"/>
+                <outlet property="avatarContainerViewWidthConstraint" destination="1r3-mt-SF4" id="LDZ-SS-uP5"/>
+                <outlet property="avatarImageView" destination="ceR-bg-hGM" id="E79-Bt-bdZ"/>
+                <outlet property="cellBottomLabel" destination="hIG-5P-tEO" id="fpA-eK-5U8"/>
+                <outlet property="cellBottomLabelHeightConstraint" destination="BzU-Ug-6OW" id="JKw-nM-qph"/>
+                <outlet property="cellTopLabel" destination="erM-AU-jKr" id="7T1-KC-Dvr"/>
+                <outlet property="cellTopLabelHeightConstraint" destination="leo-uJ-x84" id="yPe-am-Sv7"/>
+                <outlet property="messageBubbleContainerView" destination="zAY-cz-k5e" id="GJa-IU-svR"/>
+                <outlet property="messageBubbleContainerWidthConstraint" destination="bJk-Ux-iU9" id="uPy-vr-oR4"/>
+                <outlet property="messageBubbleImageView" destination="Ccf-4a-VdV" id="qWe-4g-4g8"/>
+                <outlet property="messageBubbleTopLabel" destination="geI-XE-nUm" id="Q4r-YX-3L7"/>
+                <outlet property="messageBubbleTopLabelHeightConstraint" destination="yHq-ih-J3j" id="wqa-7a-Kw2"/>
+                <outlet property="textView" destination="fnV-4l-OXZ" id="NIc-87-ut7"/>
+                <outlet property="textViewAvatarHorizontalSpaceConstraint" destination="obz-zx-LZX" id="UFb-kx-H5g"/>
+                <outlet property="textViewBottomVerticalSpaceConstraint" destination="LXn-PI-Y2h" id="w1E-b4-GAu"/>
+                <outlet property="textViewMarginHorizontalSpaceConstraint" destination="1dA-Re-dmb" id="Tir-gQ-0xw"/>
+                <outlet property="textViewTopVerticalSpaceConstraint" destination="xu0-dC-Y6B" id="Zm7-ia-s1O"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -17,7 +35,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erM-AU-jKr" userLabel="Cell top lable" customClass="KTMessagesLabel">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erM-AU-jKr" userLabel="Cell top label" customClass="KTMessagesLabel">
                     <rect key="frame" x="0.0" y="174" width="320" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="leo-uJ-x84" userLabel="Cell Top Height Constraint"/>
@@ -94,8 +112,8 @@
                         </imageView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="34" id="1r3-mt-SF4" userLabel="Avatar Container View Width Constraint"/>
-                        <constraint firstAttribute="width" constant="34" id="CN9-Cf-0j6" userLabel="Avatar Container View Height Constraint"/>
+                        <constraint firstAttribute="width" constant="34" id="1r3-mt-SF4" userLabel="Avatar Container View Width Constraint"/>
+                        <constraint firstAttribute="height" constant="34" id="CN9-Cf-0j6" userLabel="Avatar Container View Height Constraint"/>
                         <constraint firstItem="ceR-bg-hGM" firstAttribute="top" secondItem="OyA-7k-SZd" secondAttribute="top" id="eRG-NH-cjt"/>
                         <constraint firstAttribute="bottom" secondItem="ceR-bg-hGM" secondAttribute="bottom" id="h9I-w2-8Eu"/>
                         <constraint firstItem="ceR-bg-hGM" firstAttribute="leading" secondItem="OyA-7k-SZd" secondAttribute="leading" id="kKU-4y-bAZ"/>

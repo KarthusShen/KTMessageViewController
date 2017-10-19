@@ -322,7 +322,6 @@ const CGFloat kKTMessagesCollectionViewAvatarSizeDefault = 30.0f;
             
             CGFloat collectionViewHeight = CGRectGetHeight(self.collectionView.bounds);
             
-//            KTMessagesCollectionViewLayoutAttributes *attributes = [KTMessagesCollectionViewLayoutAttributes layoutAttributesForItemAtIndexPath:updateItem.indexPathAfterUpdate];
             KTMessagesCollectionViewLayoutAttributes *attributes = [KTMessagesCollectionViewLayoutAttributes layoutAttributesForItemWithIndexPath:updateItem.indexPathAfterUpdate];
             
             if (attributes.representedElementCategory == NSCollectionElementCategoryItem) {

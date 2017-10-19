@@ -8,6 +8,23 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KTMessagesCollectionViewCellIncoming">
             <connections>
+                <outlet property="avatarContainerView" destination="6ru-WO-1MZ" id="ew0-vv-1n0"/>
+                <outlet property="avatarContainerViewHeightConstraint" destination="hzR-no-d8t" id="H8O-tZ-bGw"/>
+                <outlet property="avatarContainerViewWidthConstraint" destination="uSe-0a-Uko" id="u1J-v1-IoN"/>
+                <outlet property="avatarImageView" destination="Afw-0X-1MY" id="bPM-qT-mnF"/>
+                <outlet property="cellBottomLabel" destination="CT9-5v-7W7" id="xzH-5w-ngG"/>
+                <outlet property="cellBottomLabelHeightConstraint" destination="bi9-uo-ABg" id="Aqg-fE-xqn"/>
+                <outlet property="cellTopLabel" destination="cfb-qK-L1k" id="vQY-Oi-z0G"/>
+                <outlet property="cellTopLabelHeightConstraint" destination="kU8-Z1-glC" id="SJS-PJ-onv"/>
+                <outlet property="messageBubbleContainerView" destination="xXj-MV-s7r" id="svw-MM-r9p"/>
+                <outlet property="messageBubbleContainerWidthConstraint" destination="a8b-ZO-WNI" id="D6A-Ja-yZF"/>
+                <outlet property="messageBubbleImageView" destination="XJ1-mt-BMc" id="HyX-wQ-VEs"/>
+                <outlet property="messageBubbleTopLabel" destination="Qsr-qy-353" id="T5H-hc-4mM"/>
+                <outlet property="messageBubbleTopLabelHeightConstraint" destination="wgO-aD-cmh" id="nrP-yo-Kui"/>
+                <outlet property="textViewAvatarHorizontalSpaceConstraint" destination="BNe-m8-vW3" id="qR9-5R-JP5"/>
+                <outlet property="textViewBottomVerticalSpaceConstraint" destination="OCY-8e-bbL" id="Thn-bU-Kkw"/>
+                <outlet property="textViewMarginHorizontalSpaceConstraint" destination="vUV-Bo-5Cs" id="e0G-24-7Sp"/>
+                <outlet property="textViewTopVerticalSpaceConstraint" destination="re8-BY-Qwr" id="O22-Tm-3Lf"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -102,14 +119,14 @@
                         </scrollView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="p5K-Vd-g4a" firstAttribute="leading" secondItem="xXj-MV-s7r" secondAttribute="leading" id="BNe-m8-vW3"/>
+                        <constraint firstItem="p5K-Vd-g4a" firstAttribute="leading" secondItem="xXj-MV-s7r" secondAttribute="leading" id="BNe-m8-vW3" userLabel="Text View Avatar Horizontal Space Constraint"/>
                         <constraint firstAttribute="bottom" secondItem="XJ1-mt-BMc" secondAttribute="bottom" id="Nmq-6B-ckC"/>
-                        <constraint firstAttribute="bottom" secondItem="p5K-Vd-g4a" secondAttribute="bottom" id="OCY-8e-bbL"/>
+                        <constraint firstAttribute="bottom" secondItem="p5K-Vd-g4a" secondAttribute="bottom" id="OCY-8e-bbL" userLabel="Text View Bottom Vertical Space Constraint"/>
                         <constraint firstAttribute="width" constant="244" id="a8b-ZO-WNI" userLabel="Message Bubble Container Width Constraint"/>
                         <constraint firstItem="XJ1-mt-BMc" firstAttribute="leading" secondItem="xXj-MV-s7r" secondAttribute="leading" id="d1G-bS-3Qf"/>
                         <constraint firstItem="XJ1-mt-BMc" firstAttribute="top" secondItem="xXj-MV-s7r" secondAttribute="top" id="kyg-zc-4SG"/>
-                        <constraint firstItem="p5K-Vd-g4a" firstAttribute="top" secondItem="xXj-MV-s7r" secondAttribute="top" id="re8-BY-Qwr"/>
-                        <constraint firstAttribute="trailing" secondItem="p5K-Vd-g4a" secondAttribute="trailing" id="vUV-Bo-5Cs"/>
+                        <constraint firstItem="p5K-Vd-g4a" firstAttribute="top" secondItem="xXj-MV-s7r" secondAttribute="top" id="re8-BY-Qwr" userLabel="Text View Top Vertical Space Constraint"/>
+                        <constraint firstAttribute="trailing" secondItem="p5K-Vd-g4a" secondAttribute="trailing" id="vUV-Bo-5Cs" userLabel="Text View Margin Horizontal Space Constraint"/>
                         <constraint firstAttribute="trailing" secondItem="XJ1-mt-BMc" secondAttribute="trailing" id="vrc-k9-2IL"/>
                     </constraints>
                 </customView>
@@ -133,6 +150,7 @@
         </customView>
         <collectionViewItem id="Ki9-or-eDD" userLabel="Messages Collection View Cell Incoming" customClass="KTMessagesCollectionViewCellIncoming">
             <connections>
+                <outlet property="textView" destination="NZb-Bo-qKl" id="9hG-69-cyq"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="ZKa-Tn-7QH"/>
             </connections>
         </collectionViewItem>
