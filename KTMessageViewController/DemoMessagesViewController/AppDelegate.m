@@ -8,15 +8,9 @@
 
 #import "AppDelegate.h"
 
-//以下import以后要删除，XCode9在编写头文件时如果没别的文件引用它，编写过程就没有自动完成功能，很恶心
-#import "KTMessageMediaData.h"
-#import "KTMessageData.h"
-#import "KTMessageAvatarImageDataSource.h"
-#import "KTMessageBubbleImageDataSource.h"
-#import "KTMessagesCollectionViewDataSource.h"
-#import "KTMessagesCollectionViewDelegateFlowLayout.h"
-#import "KTMessage.h"
 #import "KTMessages.h"
+
+#import "DemoMessagesViewWindowController.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +21,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    [_mainWindowController.window close];
+    _mainWindowController = nil;
+    
+    _mainWindowController = [[DemoMessagesViewWindowController alloc] initWithWindowNibName:NSStringFromClass([DemoMessagesViewWindowController class])];
+    
+    [[_mainWindowController window] center];
+    
+    [_mainWindowController.window orderFront:nil];
 }
 
 
