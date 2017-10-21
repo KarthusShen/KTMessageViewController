@@ -25,6 +25,7 @@
 		AA0539291F9B271700B23BB9 /* DemoMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0539251F9B271600B23BB9 /* DemoMessagesViewController.m */; };
 		AA05392A1F9B271700B23BB9 /* DemoMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0539261F9B271700B23BB9 /* DemoMessagesViewController.xib */; };
 		AA05392B1F9B271700B23BB9 /* DemoMessagesViewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0539271F9B271700B23BB9 /* DemoMessagesViewWindowController.xib */; };
+		AA05392E1F9B341C00B23BB9 /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05392D1F9B341C00B23BB9 /* DemoModelData.m */; };
 		AA06A3E61F96F1DF00607E23 /* KTMessagesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */; };
 		AA06A3E91F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AA06A3E81F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.m */; };
 		AA16142D1F8EF9C9006F2E15 /* NSImage+KTMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AA16142C1F8EF9C9006F2E15 /* NSImage+KTMessages.m */; };
@@ -81,6 +82,8 @@
 		AA0539251F9B271600B23BB9 /* DemoMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMessagesViewController.m; sourceTree = "<group>"; };
 		AA0539261F9B271700B23BB9 /* DemoMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoMessagesViewController.xib; sourceTree = "<group>"; };
 		AA0539271F9B271700B23BB9 /* DemoMessagesViewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoMessagesViewWindowController.xib; sourceTree = "<group>"; };
+		AA05392C1F9B341C00B23BB9 /* DemoModelData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
+		AA05392D1F9B341C00B23BB9 /* DemoModelData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
 		AA06A3E41F96F1DF00607E23 /* KTMessagesCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionView.h; sourceTree = "<group>"; };
 		AA06A3E51F96F1DF00607E23 /* KTMessagesCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMessagesCollectionView.m; sourceTree = "<group>"; };
 		AA06A3E71F974B9D00607E23 /* KTMessagesCollectionViewFlowLayoutInvalidationContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMessagesCollectionViewFlowLayoutInvalidationContext.h; sourceTree = "<group>"; };
@@ -316,6 +319,8 @@
 				AA0539221F9B271600B23BB9 /* DemoMessagesViewWindowController.h */,
 				AA0539231F9B271600B23BB9 /* DemoMessagesViewWindowController.m */,
 				AA0539271F9B271700B23BB9 /* DemoMessagesViewWindowController.xib */,
+				AA05392C1F9B341C00B23BB9 /* DemoModelData.h */,
+				AA05392D1F9B341C00B23BB9 /* DemoModelData.m */,
 			);
 			path = DemoMessagesViewController;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 				1B42A16B1F930DA8007B4BA5 /* KTMessagesCollectionViewCellOutgoing.m in Sources */,
 				AA2C52071F90522900C0E70B /* NSString+KTMessages.m in Sources */,
 				1B42A15F1F93068E007B4BA5 /* KTMessagesCollectionViewFlowLayout.m in Sources */,
+				AA05392E1F9B341C00B23BB9 /* DemoModelData.m in Sources */,
 				1B42A1621F93097D007B4BA5 /* KTMessagesCollectionViewCell.m in Sources */,
 				1B42A1561F92F8BF007B4BA5 /* KTMessagesLabel.m in Sources */,
 				AA0347BC1F8DBBA300B8A773 /* main.m in Sources */,
