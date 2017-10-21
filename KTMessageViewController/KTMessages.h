@@ -9,6 +9,7 @@
 #ifndef KTMessages_h
 #define KTMessages_h
 
+#import "KTMessagesViewController.h"
 
 //  Views
 #import "KTMessagesCollectionView.h"

@@ -439,5 +439,76 @@ static void * kKTMessagesKeyValueObservingContext = &kKTMessagesKeyValueObservin
     return CGSizeZero;
 }
 
+#pragma mark - Collection view delegate
+//TODO: Collection view delegate
+
+#pragma mark - Collection view delegate flow layout
+
+- (NSSize)collectionView:(KTMessagesCollectionView *)collectionView layout:(KTMessagesCollectionViewFlowLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return NSSizeFromCGSize([collectionViewLayout sizeForItemAtIndexPath:indexPath]);
+}
+
+- (CGFloat)collectionView:(KTMessagesCollectionView *)collectionView
+                   layout:(KTMessagesCollectionViewFlowLayout *)collectionViewLayout heightForCellTopLabelAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 0.0f;
+}
+
+- (CGFloat)collectionView:(KTMessagesCollectionView *)collectionView
+                   layout:(KTMessagesCollectionViewFlowLayout *)collectionViewLayout heightForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 0.0f;
+}
+
+- (CGFloat)collectionView:(KTMessagesCollectionView *)collectionView
+                   layout:(KTMessagesCollectionViewFlowLayout *)collectionViewLayout heightForCellBottomLabelAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 0.0f;
+}
+
+- (void)collectionView:(KTMessagesCollectionView *)collectionView
+ didTapAvatarImageView:(NSImageView *)avatarImageView
+           atIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (void)collectionView:(KTMessagesCollectionView *)collectionView didTapMessageBubbleAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (void)collectionView:(KTMessagesCollectionView *)collectionView
+ didTapCellAtIndexPath:(NSIndexPath *)indexPath
+         touchLocation:(CGPoint)touchLocation
+{
+    
+}
+
+#pragma mark - Collection view utilities
+
+- (void)kt_updateCollectionViewInsets
+{
+    //TODO:
+//    [self kt_setCollectionViewInsetsTopValue:self.topLayoutGuide.length + self.topContentAdditionalInset
+//                                  bottomValue:CGRectGetMaxY(self.collectionView.frame) - CGRectGetMinY(self.inputToolbar.frame)];
+}
+
+- (void)kt_setCollectionViewInsetsTopValue:(CGFloat)top bottomValue:(CGFloat)bottom
+{
+    //TODO:
+//    NSEdgeInsets insets = NSEdgeInsetsMake(top, 0.0f, bottom, 0.0f);
+//    self.collectionView.Insets = insets;
+//    self.collectionView.scrollIndicatorInsets = insets;
+}
+
+//- (BOOL)jsq_isMenuVisible
+//{
+//    //  check if cell copy menu is showing
+//    //  it is only our menu if `selectedIndexPathForMenu` is not `nil`
+//    return self.selectedIndexPathForMenu != nil && [[UIMenuController sharedMenuController] isMenuVisible];
+//}
+
 
 @end
