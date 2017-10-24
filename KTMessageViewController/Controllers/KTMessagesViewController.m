@@ -105,15 +105,15 @@ static void * kKTMessagesKeyValueObservingContext = &kKTMessagesKeyValueObservin
     
     [super viewWillAppear];
     //[self.view layoutIfNeeded];
-    [self.view layoutSubtreeIfNeeded];
+    //[self.view layoutSubtreeIfNeeded];
     [self.collectionView.collectionViewLayout invalidateLayout];
     
-    if (self.automaticallyScrollsToMostRecentMessage) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self scrollToBottomAnimated:NO];
-            [self.collectionView.collectionViewLayout invalidateLayoutWithContext:[KTMessagesCollectionViewFlowLayoutInvalidationContext context]];
-        });
-    }
+//    if (self.automaticallyScrollsToMostRecentMessage) {
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self scrollToBottomAnimated:NO];
+//            [self.collectionView.collectionViewLayout invalidateLayoutWithContext:[KTMessagesCollectionViewFlowLayoutInvalidationContext context]];
+//        });
+//    }
     
 //    [self kt_updateKeyboardTriggerPoint];
 }
@@ -333,8 +333,10 @@ static void * kKTMessagesKeyValueObservingContext = &kKTMessagesKeyValueObservin
     
     if (!isMediaMessage)
     {
-        cell.textView.string = [messageItem text];
-        NSParameterAssert(cell.textView.string != nil);
+        [[[cell.textView textStorage] mutableString] appendString:[messageItem text]];
+//        NSString *string = cell.textView.string;
+//        NSLog(@"cell string is %@", string);
+//        NSParameterAssert(cell.textView.string != nil);
         
         id<KTMessageBubbleImageDataSource> bubbleImageDataSource = [collectionView.dataSource collectionView:collectionView messageBubbleImageDataForItemAtIndexPath:indexPath];
         cell.messageBubbleImageView.image = [bubbleImageDataSource messageBubbleImage];

@@ -290,13 +290,13 @@
  
  @param notification The posted notification.
  */
-- (void)didReceiveMenuWillShowNotification:(NSNotification *)notification;
+//- (void)didReceiveMenuWillShowNotification:(NSNotification *)notification;
 
 /**
  Called when `UIMenuControllerWillHideMenuNotification` is posted.
  
  @param notification The posted notification.
  */
-- (void)didReceiveMenuWillHideNotification:(NSNotification *)notification;
+//- (void)didReceiveMenuWillHideNotification:(NSNotification *)notification;
 
 @end

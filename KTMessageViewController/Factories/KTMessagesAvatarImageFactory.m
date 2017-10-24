@@ -146,7 +146,8 @@
     
     //TODO:We need to do someting like above on macOS
     
-    return newImage;
+    //return newImage;
+    return image;
 }
 
 @end

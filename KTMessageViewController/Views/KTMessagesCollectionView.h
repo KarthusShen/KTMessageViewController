@@ -23,18 +23,18 @@
  *  The object that provides the data for the collection view.
  *  The data source must adopt the `KTMessagesCollectionViewDataSource` protocol.
  */
-@property (weak, nonatomic) id<KTMessagesCollectionViewDataSource> dataSource;
+@property (weak, atomic) id<KTMessagesCollectionViewDataSource> dataSource;
 
 /**
  *  The object that acts as the delegate of the collection view.
  *  The delegate must adopt the `KTMessagesCollectionViewDelegateFlowLayout` protocol.
  */
-@property (weak, nonatomic) id<KTMessagesCollectionViewDelegateFlowLayout> delegate;
+@property (weak, atomic) id<KTMessagesCollectionViewDelegateFlowLayout> delegate;
 
 /**
  *  The layout used to organize the collection view’s items.
  */
-@property (strong, nonatomic) KTMessagesCollectionViewFlowLayout *collectionViewLayout;
+@property (strong, atomic) KTMessagesCollectionViewFlowLayout *collectionViewLayout;
 
 /**
  *  Specifies whether the typing indicator displays on the left or right side of the collection view

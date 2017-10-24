@@ -10,26 +10,25 @@
 
 #import "KTMessages.h"
 
-#import "DemoMessagesViewWindowController.h"
+#import "DemoMessagesViewController.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
+@property (strong, nonatomic)  DemoMessagesViewController *demoController;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    self.demoController = [[DemoMessagesViewController alloc]initWithNibName:NSStringFromClass([DemoMessagesViewController class]) bundle:nil];
     
-    [_mainWindowController.window close];
-    _mainWindowController = nil;
+    [self.window.contentView addSubview:self.demoController.view];
+    self.demoController.view.frame = self.window.contentView.bounds;
     
-    _mainWindowController = [[DemoMessagesViewWindowController alloc] initWithWindowNibName:NSStringFromClass([DemoMessagesViewWindowController class])];
-    
-    [[_mainWindowController window] center];
-    
-    [_mainWindowController.window orderFront:nil];
 }
 
 

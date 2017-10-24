@@ -6,10 +6,14 @@
 //  Copyright © 2017年 karthus. All rights reserved.
 //
 
-#import "KTMessagesViewController.h"
+#import "KTMessages.h"
+
+#import "DemoModelData.h"
 
 @interface DemoMessagesViewController : KTMessagesViewController
 
 @property (nonatomic, weak) NSWindowController *windowController;
+
+@property (strong, nonatomic) DemoModelData *demoData;
 
 @end

@@ -24,18 +24,23 @@
          *
          *  If you are not using avatars, ignore this.
          */
-        KTMessagesAvatarImage *ktImage = [KTMessagesAvatarImageFactory avatarImageWithUserInitials:@"KT"
-                                                                                      backgroundColor:[NSColor colorWithWhite:0.85f alpha:1.0f]
-                                                                                            textColor:[NSColor colorWithWhite:0.60f alpha:1.0f]
-                                                                                                 font:[NSFont systemFontOfSize:14.0f]
-                                                                                             diameter:kKTMessagesCollectionViewAvatarSizeDefault];
+//        KTMessagesAvatarImage *ktImage = [KTMessagesAvatarImageFactory avatarImageWithUserInitials:@"KT"
+//                                                                                      backgroundColor:[NSColor colorWithWhite:0.85f alpha:1.0f]
+//                                                                                            textColor:[NSColor colorWithWhite:0.60f alpha:1.0f]
+//                                                                                                 font:[NSFont systemFontOfSize:14.0f]
+//                                                                                             diameter:kKTMessagesCollectionViewAvatarSizeDefault];
+        
+        
+        KTMessagesAvatarImage *ktImage = [KTMessagesAvatarImageFactory avatarImageWithImage:[NSImage imageNamed:@"demo_avatar_cook"]
+                                                                                     diameter:kKTMessagesCollectionViewAvatarSizeDefault];
+        
         
         KTMessagesAvatarImage *cookImage = [KTMessagesAvatarImageFactory avatarImageWithImage:[NSImage imageNamed:@"demo_avatar_cook"]
                                                                                        diameter:kKTMessagesCollectionViewAvatarSizeDefault];
-        
+
         KTMessagesAvatarImage *jobsImage = [KTMessagesAvatarImageFactory avatarImageWithImage:[NSImage imageNamed:@"demo_avatar_jobs"]
                                                                                        diameter:kKTMessagesCollectionViewAvatarSizeDefault];
-        
+
         KTMessagesAvatarImage *wozImage = [KTMessagesAvatarImageFactory avatarImageWithImage:[NSImage imageNamed:@"demo_avatar_woz"]
                                                                                       diameter:kKTMessagesCollectionViewAvatarSizeDefault];
         

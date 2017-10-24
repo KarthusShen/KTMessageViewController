@@ -16,7 +16,6 @@
 
 static NSMutableSet *ktMessagesCollectionViewCellActions = nil;
 
-//TODO: implements this calss
 @interface KTMessagesCollectionViewCell ()
 
 @property (weak) IBOutlet KTMessagesLabel *cellTopLabel;
