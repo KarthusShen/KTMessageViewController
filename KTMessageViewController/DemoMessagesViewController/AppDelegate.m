@@ -27,7 +27,7 @@
     self.demoController = [[DemoMessagesViewController alloc]initWithNibName:NSStringFromClass([DemoMessagesViewController class]) bundle:nil];
     
     [self.window.contentView addSubview:self.demoController.view];
-    self.demoController.view.frame = self.window.contentView.bounds;
+    //self.demoController.view.frame = self.window.contentView.bounds;
     
 }
 

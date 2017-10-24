@@ -17,7 +17,7 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+     [super viewDidLoad];
     
     self.title = @"KTMessages";
     
@@ -31,6 +31,10 @@
      *  Load fake data for the demo
      */
     self.demoData = [[DemoModelData alloc] init];
+    
+    [self.collectionView.collectionViewLayout invalidateLayoutWithContext:[KTMessagesCollectionViewFlowLayoutInvalidationContext context]];
+    [self.collectionView.collectionViewLayout invalidateLayout];
+    [self.collectionView reloadData];
 }
 
 #pragma mark - JSQMessages CollectionView DataSource
@@ -70,7 +74,8 @@
     if(indexPath.item %3 == 0 )
     {
         KTMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
-        return [[KTMessagesTimestampFormatter sharedFormatter] attributedTimestampForDate:message.date];
+        NSAttributedString *string = [[KTMessagesTimestampFormatter sharedFormatter] attributedTimestampForDate:message.date];
+        return string;
     }
     return nil;
 }
@@ -123,7 +128,7 @@
     return cell;
 }
 
-#pragma  mark - KTmessages collection view flow layout delegate
+#pragma  mark - KTMesssages collection view flow layout delegate
 
 - (CGFloat)collectionView:(KTMessagesCollectionView *)collectionView
                    layout:(KTMessagesCollectionViewFlowLayout *)collectionViewLayout heightForCellTopLabelAtIndexPath:(NSIndexPath *)indexPath

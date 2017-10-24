@@ -37,6 +37,7 @@
 //    self.keyboardDismissMode = NSScrollViewKeyboardDismissModeNone;
 //    self.alwaysBounceVertical = YES;
 //    self.bounces = YES;
+
     
     [self registerNib:[KTMessagesCollectionViewCellIncoming nib]
 forItemWithIdentifier:[KTMessagesCollectionViewCellIncoming cellReuseIdentifier]];

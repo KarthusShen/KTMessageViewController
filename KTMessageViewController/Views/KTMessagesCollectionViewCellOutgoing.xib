@@ -26,7 +26,7 @@
                 <outlet property="textViewBottomVerticalSpaceConstraint" destination="LXn-PI-Y2h" id="w1E-b4-GAu"/>
                 <outlet property="textViewMarginHorizontalSpaceConstraint" destination="1dA-Re-dmb" id="Tir-gQ-0xw"/>
                 <outlet property="textViewTopVerticalSpaceConstraint" destination="xu0-dC-Y6B" id="Zm7-ia-s1O"/>
-                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="IY4-Ef-hNu"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -162,10 +162,5 @@
                 <constraint firstItem="6ct-E7-x0u" firstAttribute="centerY" secondItem="zAY-cz-k5e" secondAttribute="centerY" id="wET-mm-Ed9"/>
             </constraints>
         </customView>
-        <collectionViewItem id="pa4-cJ-3ss" customClass="KTMessagesCollectionViewCellOutgoing">
-            <connections>
-                <outlet property="view" destination="Hz6-mo-xeY" id="4yQ-c9-Hgc"/>
-            </connections>
-        </collectionViewItem>
     </objects>
 </document>

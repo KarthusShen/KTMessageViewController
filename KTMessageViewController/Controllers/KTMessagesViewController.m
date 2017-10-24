@@ -328,7 +328,8 @@ static void * kKTMessagesKeyValueObservingContext = &kKTMessagesKeyValueObservin
         cellIdentifier = isOutgoingMessage ? self.outgoingCellIdentifier : self.incomingCellIdentifier;
     }
     
-    KTMessagesCollectionViewCell *cell = [collectionView makeItemWithIdentifier:cellIdentifier forIndexPath:indexPath];
+//    KTMessagesCollectionViewCell *cell = [collectionView makeItemWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    KTMessagesCollectionViewCell *cell = [[KTMessagesCollectionViewCell alloc] initWithNibName:(isOutgoingMessage ? NSStringFromClass([KTMessagesCollectionViewCellOutgoing class]) : NSStringFromClass([KTMessagesCollectionViewCellOutgoing class])) bundle:nil];
     cell.delegate = collectionView;
     
     if (!isMediaMessage)

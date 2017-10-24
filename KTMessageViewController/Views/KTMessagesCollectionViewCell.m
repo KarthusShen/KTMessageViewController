@@ -84,6 +84,15 @@ static NSMutableSet *ktMessagesCollectionViewCellActions = nil;
 }
 
 #pragma mark - Initialization
+- (void)viewDidAppear
+{
+    
+}
+
+-(void)viewDidLoad
+{
+    
+}
 
 - (void)awakeFromNib
 {
